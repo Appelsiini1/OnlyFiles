@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 using MetroFramework.Forms;
 
 namespace OnlyFiles
@@ -18,32 +19,7 @@ namespace OnlyFiles
             InitializeComponent();
         }
 
-        private void tiedostoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroUserControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -51,6 +27,39 @@ namespace OnlyFiles
         private void metroLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        // Tab Control
+        private void metroTabControl_Click(object sender, EventArgs e)
+        {
+            if (this.metroTabControl1.SelectedTab == metroTabPage1)
+            {
+                //Main Menu
+            }
+
+            if (this.metroTabControl1.SelectedTab == metroTabPage2)
+            {
+                //Add
+            }
+            if (this.metroTabControl1.SelectedTab == metroTabPage3)
+            {
+                //Browse
+            }
+
+            if (this.metroTabControl1.SelectedTab == metroTabPage4)
+            {
+                //Settings
+            }
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(Owner, "jotain", "Otsikko");
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(Owner, "jotain", "Otsikko");
         }
     }
 }
