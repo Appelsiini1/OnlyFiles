@@ -61,5 +61,10 @@ namespace OnlyFiles
         {
             MetroMessageBox.Show(Owner, "jotain", "Otsikko");
         }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
