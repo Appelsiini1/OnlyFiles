@@ -62,9 +62,19 @@ namespace OnlyFiles
             MetroMessageBox.Show(Owner, "jotain", "Otsikko");
         }
 
-        private void metroTextBox1_Click(object sender, EventArgs e)
+        private void metroTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string searchText = this.searchBox.Text.ToString();
+                MetroMessageBox.Show(Owner, searchText, "Search");
+            }
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string searchText = this.searchBox.Text.ToString();
+            MetroMessageBox.Show(Owner, searchText, "Search");
         }
     }
 }
