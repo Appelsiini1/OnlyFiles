@@ -5,10 +5,10 @@ C:\Users\ramis\Documents\GitHub\OnlyFiles\bin\Debug\MetroFramework.Design.dll
 C:\Users\ramis\Documents\GitHub\OnlyFiles\bin\Debug\MetroFramework.dll
 C:\Users\ramis\Documents\GitHub\OnlyFiles\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.csprojAssemblyReference.cache
-C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.MainMenu.resources
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.Properties.Resources.resources
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.csproj.GenerateResource.cache
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.csproj.CoreCompileInputs.cache
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.csproj.CopyComplete
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.exe
 C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.pdb
+C:\Users\ramis\Documents\GitHub\OnlyFiles\obj\Debug\OnlyFiles.MainWindow.resources

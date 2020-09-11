@@ -12,19 +12,15 @@ using MetroFramework.Forms;
 
 namespace OnlyFiles
 {
-    public partial class MainMenu : MetroForm
+    public partial class MainWindow : MetroForm
     {
-        public MainMenu()
+        public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
+        // Kun MainWindow ladataan
+        private void MainWindow_Load(object sender, EventArgs e)
         {
 
         }
@@ -50,11 +46,6 @@ namespace OnlyFiles
             {
                 //Settings
             }
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            MetroMessageBox.Show(Owner, "jotain", "Otsikko");
         }
 
         private void metroTile1_Click(object sender, EventArgs e)

@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace OnlyFiles
 {
-    partial class MainMenu
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +32,7 @@ namespace OnlyFiles
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
@@ -43,33 +41,16 @@ namespace OnlyFiles
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.searchBox = new MetroFramework.Controls.MetroTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.newDatabaseTile = new MetroFramework.Controls.MetroTile();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.openDatabaseTile = new MetroFramework.Controls.MetroTile();
+            this.exitTile = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 80);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(112, 25);
-            this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Hello World!";
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(3, 23);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(123, 37);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroTabControl1
             // 
@@ -81,7 +62,7 @@ namespace OnlyFiles
             this.metroTabControl1.Location = new System.Drawing.Point(23, 76);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(982, 474);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 3;
@@ -90,7 +71,10 @@ namespace OnlyFiles
             // 
             // metroTabPage1
             // 
-            this.metroTabPage1.Controls.Add(this.metroButton1);
+            this.metroTabPage1.Controls.Add(this.exitTile);
+            this.metroTabPage1.Controls.Add(this.openDatabaseTile);
+            this.metroTabPage1.Controls.Add(this.metroLabel2);
+            this.metroTabPage1.Controls.Add(this.newDatabaseTile);
             this.metroTabPage1.Controls.Add(this.metroLabel1);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
@@ -203,8 +187,6 @@ namespace OnlyFiles
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(919, 44);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -214,7 +196,63 @@ namespace OnlyFiles
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // MainMenu
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.Location = new System.Drawing.Point(22, 19);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(59, 25);
+            this.metroLabel1.TabIndex = 2;
+            this.metroLabel1.Text = "Hello!";
+            // 
+            // newDatabaseTile
+            // 
+            this.newDatabaseTile.ActiveControl = null;
+            this.newDatabaseTile.Location = new System.Drawing.Point(22, 61);
+            this.newDatabaseTile.Name = "newDatabaseTile";
+            this.newDatabaseTile.Size = new System.Drawing.Size(150, 110);
+            this.newDatabaseTile.Style = MetroFramework.MetroColorStyle.Green;
+            this.newDatabaseTile.TabIndex = 3;
+            this.newDatabaseTile.Text = "New\r\nDatabase";
+            this.newDatabaseTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.newDatabaseTile.UseSelectable = true;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel2.Location = new System.Drawing.Point(497, 19);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(106, 25);
+            this.metroLabel2.TabIndex = 4;
+            this.metroLabel2.Text = "Recent Files";
+            // 
+            // openDatabaseTile
+            // 
+            this.openDatabaseTile.ActiveControl = null;
+            this.openDatabaseTile.Location = new System.Drawing.Point(178, 61);
+            this.openDatabaseTile.Name = "openDatabaseTile";
+            this.openDatabaseTile.Size = new System.Drawing.Size(150, 110);
+            this.openDatabaseTile.Style = MetroFramework.MetroColorStyle.Green;
+            this.openDatabaseTile.TabIndex = 5;
+            this.openDatabaseTile.Text = "Open\r\nDatabase";
+            this.openDatabaseTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.openDatabaseTile.UseSelectable = true;
+            // 
+            // exitTile
+            // 
+            this.exitTile.ActiveControl = null;
+            this.exitTile.Location = new System.Drawing.Point(22, 177);
+            this.exitTile.Name = "exitTile";
+            this.exitTile.Size = new System.Drawing.Size(306, 90);
+            this.exitTile.Style = MetroFramework.MetroColorStyle.Green;
+            this.exitTile.TabIndex = 6;
+            this.exitTile.Text = "Exit";
+            this.exitTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.exitTile.UseSelectable = true;
+            // 
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -223,11 +261,11 @@ namespace OnlyFiles
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.metroTabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MainMenu";
+            this.Name = "MainWindow";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "OnlyFiles";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
@@ -238,9 +276,6 @@ namespace OnlyFiles
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
@@ -249,6 +284,11 @@ namespace OnlyFiles
         private MetroFramework.Controls.MetroTextBox searchBox;
         private PictureBox pictureBox1;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile exitTile;
+        private MetroFramework.Controls.MetroTile openDatabaseTile;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroTile newDatabaseTile;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }
 
